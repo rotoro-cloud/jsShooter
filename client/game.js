@@ -47,7 +47,7 @@ var colorBlink = 0;
 socket.on("id", function (data) {
 	console.log("Your id is " + data.id);
 	id = data.id;
-	version.innerHTML = "nodeJS v." + data.version;
+	version.innerHTML = "nodeJS v" + data.version;
 	setTimeout(function () {
 		socket.emit("kthx");
 	}, 100);
