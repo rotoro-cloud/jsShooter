@@ -4,6 +4,8 @@ var serv = require('http').Server(app);
 var colors = require('colors/safe');
 var middleware = require('socketio-wildcard')();
 
+const [major, minor, patch] = process.versions.node.split('.').map(Number)
+
 var debug = typeof v8debug === 'object' || /--debug/.test(process.execArgv.join(' '));
 
 console.log(colors.green("[jsShooter] Starting server..."));
@@ -614,6 +616,7 @@ io.sockets.on("connection", function (socket) {
 	console.log(colors.cyan("[jsShooter] Socket connection with id " + socket.id));
 	socket.emit("id", {
 		id: socket.id
+		version: major + "." + minor
 	});
 
 	socket.on("disconnect", function () {
