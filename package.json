@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AntonUden/jsShooter.git"
+    "url": "git+https://github.com/rotoro-cloud/jsShooter.git"
   },
   "dependencies": {
     "colors": "1.3.2",
@@ -22,7 +22,7 @@
   "author": "AntonUden",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AntonUden/jsShooter/issues"
+    "url": "https://github.com/rotoro-cloud/jsShooter/issues"
   },
-  "homepage": "https://github.com/AntonUden/jsShooter#readme"
+  "homepage": "https://github.com/rotoro-cloud/jsShooter#readme"
 }
