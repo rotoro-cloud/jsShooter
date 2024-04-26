@@ -1,6 +1,7 @@
 var uiDiv = document.getElementById("uiDiv");
 var countdownDiv = document.getElementById("countdown");
 var scoreDiv = document.getElementById("scoreDiv");
+var version = document.getElementById("version");
 var canvas = document.getElementById('ctx');
 var ctx = canvas.getContext("2d");
 var clickCooldown = 0;
@@ -46,6 +47,7 @@ var colorBlink = 0;
 socket.on("id", function (data) {
 	console.log("Your id is " + data.id);
 	id = data.id;
+	version.innerHTML = data.version;
 	setTimeout(function () {
 		socket.emit("kthx");
 	}, 100);
