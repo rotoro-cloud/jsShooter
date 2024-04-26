@@ -615,7 +615,7 @@ io.sockets.on("connection", function (socket) {
 	PLAYER_LIST[socket.id] = player;
 	console.log(colors.cyan("[jsShooter] Socket connection with id " + socket.id));
 	socket.emit("id", {
-		id: socket.id
+		id: socket.id,
 		version: major + "." + minor
 	});
 
